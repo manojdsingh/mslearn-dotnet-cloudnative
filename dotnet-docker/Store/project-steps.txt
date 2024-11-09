@@ -1,0 +1,5 @@
+cd ./dotnet-docker 
+ docker build -t storefrontend:latest -f Store/Dockerfile .
+
+ docker run -it --rm -p 32001:8080 storefrontend
+ 
