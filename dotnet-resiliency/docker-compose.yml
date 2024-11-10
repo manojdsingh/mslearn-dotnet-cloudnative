@@ -7,10 +7,10 @@ services:
     environment: 
       - ProductEndpoint=http://backend:8080
     ports:
-      - "32000:8080"
+      - "9000:8080"
     depends_on: 
       - backend
   backend:
     image: products:latest
     ports: 
-      - "32001:8080"
+      - "9005:8080"
