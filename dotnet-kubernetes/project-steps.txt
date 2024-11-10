@@ -1,0 +1,5 @@
+kubectl apply -f backend-deploy.yml
+kubectl get pods
+kubectl apply -f frontend-deploy.yml
+kubectl delete deployment <<deploymentName>>
+kubectl scale --replicas=5 deployment/productsbackend
